@@ -1,4 +1,4 @@
-#zabbix-varnish-plus
+  <h1>ZABBIX-VARNISH-PLUS</h1>
 
 Based on https://github.com/EXPIM/zabbix-varnish
 
@@ -10,17 +10,17 @@ allow zabbix to run scripts with varnish permissions by adding to group: #usermo
 upload userparameters to /etc/zabbix/zabbix-agent.d/
 import template into zabbix and attach to vm which has varnish installed and running
 
-#plus features:
+<h2>plus features:</h2>
 
-  graphics:
+  <h4>graphics:</h4>
   - Varnish Fetch Fails
   - Varnish HIT/MISS
 
-  itens:
+  <h4>itens:</h4>
   - Varnish Fetch Fails (NEW)
   - Varnish Fetch Fails (TOTAL)
   - Varnish Cache Hits (%)
   - Varnish Cache Miss (%)
 
-  triggers:
+  <h4>triggers:</h4>
   - Varnish Fetch Fails
