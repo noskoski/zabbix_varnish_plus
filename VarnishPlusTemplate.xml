@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2019-03-19T17:40:24Z</date>
+    <date>2019-03-19T18:41:36Z</date>
     <groups>
         <group>
             <name>Varnish</name>
@@ -505,8 +505,11 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Zabbix-agent Varnish Template plus V4-V5:totalvarnish.fetch_failed_new.last()}&gt;0 and&#13;
-{Zabbix-agent Varnish Template plus V4-V5:totalvarnish.fetch_failed_new.last(#2)}&gt;0</expression>
+            <expression>{Zabbix-agent Varnish Template plus V4-V5:totalvarnish.fetch_failed_new.last()}&gt;&#13;
+{Zabbix-agent Varnish Template plus V4-V5:totalvarnish.fetch_failed_new.last(#2)}&#13;
+and &#13;
+{Zabbix-agent Varnish Template plus V4-V5:totalvarnish.fetch_failed_new.last(#2)}&gt;&#13;
+{Zabbix-agent Varnish Template plus V4-V5:totalvarnish.fetch_failed_new.last(#3)}</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>Varnish Fetch Fail</name>
